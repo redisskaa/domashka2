@@ -17,18 +17,21 @@
 
         <Button
             android:id="@+id/buttonX"
+            android:textSize="50sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
         </Button>
 
         <Button
             android:id="@+id/button1_X"
+            android:textSize="50sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
         </Button>
 
         <Button
             android:id="@+id/button2_X"
+            android:textSize="50sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
         </Button>
@@ -41,6 +44,7 @@
 
         <Button
             android:id="@+id/button1_0"
+            android:textSize="50sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:ignore="ButtonStyle">
@@ -48,12 +52,14 @@
 
         <Button
             android:id="@+id/button2_0"
+            android:textSize="50sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
         </Button>
 
         <Button
             android:id="@+id/button3_0"
+            android:textSize="50sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
         </Button>
@@ -67,18 +73,21 @@
 
         <Button
             android:id="@+id/button3_X"
+            android:textSize="50sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
         </Button>
 
         <Button
             android:id="@+id/buttonO"
+            android:textSize="50sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
         </Button>
 
         <Button
             android:id="@+id/button4_0"
+            android:textSize="50sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
         </Button>

@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     Button button;
@@ -19,11 +22,16 @@ public class MainActivity extends AppCompatActivity {
     Button button7;
     Button button8;
     Button buttonClear;
+    char randomLetter;
+    ArrayList<Character> letters = new ArrayList<>();
+    Random random = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        letters.add('X');
+        letters.add('O');
 
         button = findViewById(R.id.buttonX);
         button1 = findViewById(R.id.buttonO);
@@ -37,31 +45,58 @@ public class MainActivity extends AppCompatActivity {
         buttonClear = findViewById(R.id.buttonClear);
 
         button.setOnClickListener(view -> {
-            button.setText("X");
+            int randomIndex = random.nextInt(letters.size());
+            randomLetter = letters.get(randomIndex);
+            System.out.println("Случайная буква1: " + randomLetter);
+            button.setText(Character.toString(randomLetter));
         });
         button1.setOnClickListener(view -> {
-            button1.setText("O");
+            int randomIndex = random.nextInt(letters.size());
+            randomLetter = letters.get(randomIndex);
+            System.out.println("Случайная буква2: " + randomLetter);
+            button1.setText(Character.toString(randomLetter));
         });
         button2.setOnClickListener(view -> {
-            button2.setText("X");
+            int randomIndex = random.nextInt(letters.size());
+            randomLetter = letters.get(randomIndex);
+            System.out.println("Случайная буква2: " + randomLetter);
+            button2.setText(Character.toString(randomLetter));
         });
         button3.setOnClickListener(view -> {
-            button3.setText("O");
+            int randomIndex = random.nextInt(letters.size());
+            randomLetter = letters.get(randomIndex);
+            System.out.println("Случайная буква2: " + randomLetter);
+            button3.setText(Character.toString(randomLetter));
         });
         button4.setOnClickListener(view -> {
-            button4.setText("X");
+            int randomIndex = random.nextInt(letters.size());
+            randomLetter = letters.get(randomIndex);
+            System.out.println("Случайная буква2: " + randomLetter);
+            button4.setText(Character.toString(randomLetter));
         });
         button5.setOnClickListener(view -> {
-            button5.setText("O");
+            int randomIndex = random.nextInt(letters.size());
+            randomLetter = letters.get(randomIndex);
+            System.out.println("Случайная буква2: " + randomLetter);
+            button5.setText(Character.toString(randomLetter));
         });
         button6.setOnClickListener(view -> {
-            button6.setText("X");
+            int randomIndex = random.nextInt(letters.size());
+            randomLetter = letters.get(randomIndex);
+            System.out.println("Случайная буква2: " + randomLetter);
+            button6.setText(Character.toString(randomLetter));
         });
         button7.setOnClickListener(view -> {
-            button7.setText("O");
+            int randomIndex = random.nextInt(letters.size());
+            randomLetter = letters.get(randomIndex);
+            System.out.println("Случайная буква2: " + randomLetter);
+            button7.setText(Character.toString(randomLetter));
         });
         button8.setOnClickListener(view -> {
-            button8.setText("O");
+            int randomIndex = random.nextInt(letters.size());
+            randomLetter = letters.get(randomIndex);
+            System.out.println("Случайная буква2: " + randomLetter);
+            button8.setText(Character.toString(randomLetter));
         });
         buttonClear.setOnClickListener(view -> {
             button.setText("");
