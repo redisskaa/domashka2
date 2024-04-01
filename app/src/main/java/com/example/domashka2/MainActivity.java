@@ -49,54 +49,63 @@ public class MainActivity extends AppCompatActivity {
             randomLetter = letters.get(randomIndex);
             System.out.println("Случайная буква1: " + randomLetter);
             button.setText(Character.toString(randomLetter));
+            button.setEnabled(false);
         });
         button1.setOnClickListener(view -> {
             int randomIndex = random.nextInt(letters.size());
             randomLetter = letters.get(randomIndex);
             System.out.println("Случайная буква2: " + randomLetter);
             button1.setText(Character.toString(randomLetter));
+            button1.setEnabled(false);
         });
         button2.setOnClickListener(view -> {
             int randomIndex = random.nextInt(letters.size());
             randomLetter = letters.get(randomIndex);
             System.out.println("Случайная буква2: " + randomLetter);
             button2.setText(Character.toString(randomLetter));
+            button2.setEnabled(false);
         });
         button3.setOnClickListener(view -> {
             int randomIndex = random.nextInt(letters.size());
             randomLetter = letters.get(randomIndex);
             System.out.println("Случайная буква2: " + randomLetter);
             button3.setText(Character.toString(randomLetter));
+            button3.setEnabled(false);
         });
         button4.setOnClickListener(view -> {
             int randomIndex = random.nextInt(letters.size());
             randomLetter = letters.get(randomIndex);
             System.out.println("Случайная буква2: " + randomLetter);
             button4.setText(Character.toString(randomLetter));
+            button4.setEnabled(false);
         });
         button5.setOnClickListener(view -> {
             int randomIndex = random.nextInt(letters.size());
             randomLetter = letters.get(randomIndex);
             System.out.println("Случайная буква2: " + randomLetter);
             button5.setText(Character.toString(randomLetter));
+            button5.setEnabled(false);
         });
         button6.setOnClickListener(view -> {
             int randomIndex = random.nextInt(letters.size());
             randomLetter = letters.get(randomIndex);
             System.out.println("Случайная буква2: " + randomLetter);
             button6.setText(Character.toString(randomLetter));
+            button6.setEnabled(false);
         });
         button7.setOnClickListener(view -> {
             int randomIndex = random.nextInt(letters.size());
             randomLetter = letters.get(randomIndex);
             System.out.println("Случайная буква2: " + randomLetter);
             button7.setText(Character.toString(randomLetter));
+            button7.setEnabled(false);
         });
         button8.setOnClickListener(view -> {
             int randomIndex = random.nextInt(letters.size());
             randomLetter = letters.get(randomIndex);
             System.out.println("Случайная буква2: " + randomLetter);
             button8.setText(Character.toString(randomLetter));
+            button8.setEnabled(false);
         });
         buttonClear.setOnClickListener(view -> {
             button.setText("");
@@ -108,6 +117,15 @@ public class MainActivity extends AppCompatActivity {
             button6.setText("");
             button7.setText("");
             button8.setText("");
+            button.setEnabled(true);
+            button1.setEnabled(true);
+            button2.setEnabled(true);
+            button3.setEnabled(true);
+            button4.setEnabled(true);
+            button5.setEnabled(true);
+            button6.setEnabled(true);
+            button7.setEnabled(true);
+            button8.setEnabled(true);
         });
     }
 
